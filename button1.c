@@ -45,7 +45,7 @@ sudo buttons/button
 
 	Добавляем в автозапуск:
 	В файл /etc/rc.local перед  exit0  добавляем путь к файлу
-sudo mcedit /etc/rc.local
+sudo nano /etc/rc.local
 /home/pi/buttons/button
 
 */

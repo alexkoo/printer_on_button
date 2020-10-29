@@ -10,11 +10,12 @@ int out = 0;
  {
 but = digitalRead(24);
 out = digitalRead(25);
+	  
 if (but== 0 && out == 0){
 	digitalWrite(25, 1);
 	delay (5000);
   	    }
-
+// Если не нужно отключение кнопкой следующий if можно удалить
 if (but == 0 && out == 1){
 	digitalWrite(25, 0);
 	delay (5000);
@@ -23,6 +24,7 @@ if (but == 0 && out == 1){
 else{
 	delay (500);
     }
+	  
  }
 return 0;
 }

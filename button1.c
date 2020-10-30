@@ -1,23 +1,27 @@
 ﻿#include <wiringPi.h>
 int main (void) {
-int but = 0;
-int out = 0;
+	
+int button_pin = 24
+int out_pin = 25	
+int button_val = 0;
+int out_val = 0;
+
   wiringPiSetup();
-  pinMode (24, INPUT) ;
-  pinMode (25, OUTPUT);
+  pinMode (button_pin, INPUT) ;
+  pinMode (out_pin, OUTPUT);
 
   for (;;) 
  {
-but = digitalRead(24);
-out = digitalRead(25);
+button_val = digitalRead(button_pin);
+out_val = digitalRead(out_pin);
 	  
-if (but== 0 && out == 0){
-	digitalWrite(25, 1);
+if (button_val== 0 && out_val == 0){
+	digitalWrite(out_pin, 1);
 	delay (5000);
   	    }
 // Если не нужно отключение кнопкой следующий if можно удалить
-if (but == 0 && out == 1){
-	digitalWrite(25, 0);
+if (button_val == 0 && out_val == 1){
+	digitalWrite(out_pin, 0);
 	delay (5000);
   	    }
 

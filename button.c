@@ -1,12 +1,12 @@
 ﻿#include <wiringPi.h>
 int main (void) {
 
-const byte button_off = 1; //использовать ли функцию отключения
-const byte button_pin = 24;
-const byte out_pin = 25;	
+const int button_off = 1; //использовать ли функцию отключения
+const int button_pin = 24;
+const int out_pin = 25;	
 
-byte button_val = 1;
-byte out_val = 0;
+int button_val = 1;
+int out_val = 0;
 
   wiringPiSetup();
   pinMode (button_pin, INPUT) ;

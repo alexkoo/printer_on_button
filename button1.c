@@ -39,7 +39,7 @@ return 0;
 	Запускает и выключает питание принтера при нажатии на кнопку
 	На основе https://pcminipro.ru/orangepi/wiringop-wiringpi-na-orange-pi/
 	Для работы, возможно, требуется WiringOP
-	https://github.com/zhaolei/WiringOP.git -b h3
+	https://github.com/zhaolei/WiringOP.git
 	Компилируем:
 sudo gcc button1.c -o button -lwiringPi -lpthread
 	Кладем на место

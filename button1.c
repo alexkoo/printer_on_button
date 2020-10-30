@@ -1,8 +1,8 @@
 ﻿#include <wiringPi.h>
 int main (void) {
 	
-int button_pin = 24
-int out_pin = 25	
+int button_pin = 24;
+int out_pin = 25;	
 int button_val = 0;
 int out_val = 0;
 

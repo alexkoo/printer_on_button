@@ -4,19 +4,17 @@
 На основе https://pcminipro.ru/orangepi/wiringop-wiringpi-na-orange-pi/
 
 Для работы требуется (скорее всего) WiringOP
-
 https://micro-pi.ru/wiringop 
 
-git clone https://github.com/zhaolei/WiringOP.git -b h3
-cd WiringOP
-chmod +x ./build
-sudo ./build
+	git clone https://github.com/zhaolei/WiringOP.git -b h3
+	cd WiringOP
+	chmod +x ./build
+	sudo ./build
 
 Для инициализации при загрузке добавить в файл строку
-
-sudo mcedit /etc/rc.local
-
-gpio mode 25 output
+	sudo mcedit /etc/rc.local
+	gpio mode 25 output
+	
 Компилируем:
 	sudo gcc button1.c -o button -lwiringPi -lpthread
 

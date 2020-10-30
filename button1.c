@@ -1,9 +1,11 @@
 ﻿#include <wiringPi.h>
 int main (void) {
-	
-int button_pin = 24;
-int out_pin = 25;	
-int button_val = 0;
+
+const bool button_off = 1; //использовать ли функцию отключения
+condt int button_pin = 24;
+const int out_pin = 25;	
+
+int button_val = 1;
 int out_val = 0;
 
   wiringPiSetup();
@@ -20,7 +22,7 @@ if (button_val== 0 && out_val == 0){
 	delay (5000);
   	    }
 // Если не нужно отключение кнопкой следующий if можно удалить
-if (button_val == 0 && out_val == 1){
+if (button_val == 0 && out_val == 1 && button_off == 1){
 	digitalWrite(out_pin, 0);
 	delay (5000);
   	    }

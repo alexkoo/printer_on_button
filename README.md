@@ -1,5 +1,7 @@
 # Запускает и выключает питание принтера при нажатии на кнопку.
 
+Программа к статье https://3dtoday.ru/blogs/alexalexk/octoprint-vklyucenie-vyklyucenie-bloka-pitaniya-knopkoi
+
 На основе https://pcminipro.ru/orangepi/wiringop-wiringpi-na-orange-pi/
 Проверялось на OrangePI Lite / Armbian Armbian buster 20.08
 

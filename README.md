@@ -52,5 +52,3 @@
 
 	sudo nano /etc/rc.local
 	/home/pi/buttons/button
-
-*/

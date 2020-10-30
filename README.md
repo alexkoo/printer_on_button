@@ -13,14 +13,18 @@ https://micro-pi.ru/wiringop
 	sudo ./build
 
 Ставим с гитхаба:
-git clone https://github.com/alexkoo/printer_on_button
-cd printer_on_button
+
+	git clone https://github.com/alexkoo/printer_on_button
+	cd printer_on_button
 Правим button.c под свои нужды
-nano button.c
+
+	nano button.c
 Компилируем
-sudo gcc button.c -o button -lwiringPi -lpthread
+
+	gcc button.c -o button -lwiringPi -lpthread
 Запускаем 
-sudo button
+
+	sudo button
 
 Добавляем в автозапуск:
 В файл /etc/rc.local перед  exit0  добавляем путь к файлу

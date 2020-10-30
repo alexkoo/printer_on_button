@@ -1,8 +1,8 @@
 ﻿#include <wiringPi.h>
 int main (void) {
 
-const bool button_off = 1; //использовать ли функцию отключения
-condt int button_pin = 24;
+const int button_off = 1; //использовать ли функцию отключения
+const int button_pin = 24;
 const int out_pin = 25;	
 
 int button_val = 1;

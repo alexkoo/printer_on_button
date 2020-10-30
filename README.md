@@ -1,7 +1,8 @@
 # printer_on_button
 
-Запускает и выключает питание принтера при нажатии на кнопку
+Запускает и выключает питание принтера при нажатии на кнопку.
 На основе https://pcminipro.ru/orangepi/wiringop-wiringpi-na-orange-pi/
+Проверялось на OrangePI Lite / Armbian Armbian buster 20.08
 
 Для работы требуется (скорее всего) WiringOP
 https://micro-pi.ru/wiringop 
@@ -34,4 +35,5 @@ https://micro-pi.ru/wiringop
 
 	sudo nano /etc/rc.local
 	/home/pi/buttons/button
+
 */

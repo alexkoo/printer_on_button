@@ -1,19 +1,19 @@
-# printer_on_button
 # Запускает и выключает питание принтера при нажатии на кнопку.
 
 На основе https://pcminipro.ru/orangepi/wiringop-wiringpi-na-orange-pi/
 Проверялось на OrangePI Lite / Armbian Armbian buster 20.08
 
-Для работы требуется (скорее всего) WiringOP
-https://micro-pi.ru/wiringop 
+Для работы требуется WiringOP
 
 	git clone https://github.com/zhaolei/WiringOP.git -b h3
 	cd WiringOP
 	chmod +x ./build
 	sudo ./build
 
+
 Ставим с гитхаба:
 
+	cd #
 	git clone https://github.com/alexkoo/printer_on_button
 	cd printer_on_button
 Правим button.c под свои нужды

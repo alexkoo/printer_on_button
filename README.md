@@ -41,5 +41,8 @@
 	git pull
 дальше правим компилируем
 
+Добавлена функция инвертирования сигнала для работы PsuControl 
+https://github.com/kantlivelong/OctoPrint-PSUControl/wiki/Settings#sensing
+
 
 

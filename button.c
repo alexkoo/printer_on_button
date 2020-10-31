@@ -5,7 +5,7 @@ const char  button_off = 1; //использовать ли функцию от�
 const char  sens_on = 1; //Функция совместимости с psu control (инвертирует пин который не жалко) https://github.com/kantlivelong/OctoPrint-PSUControl/wiki/Settings#sensing 	
 const char  button_pin = 24;
 const char  out_pin = 25;	
-const char  sens_pin = 23; // какой не жалко
+const char  sens_pin = 23; 
 	
 char  button_val = 1;
 char  out_val = 0;
@@ -22,10 +22,10 @@ button_val = digitalRead(button_pin);
 out_val = digitalRead(out_pin);
 
 	  
-if ( sens_on = 1 && out_val == 0){
+if ( sens_on == 1 && out_val == 0){
 	digitalWrite(sens_pin, 1);
 	  	    }
-if ( sens_on = 1 && out_val == 1){
+if ( sens_on == 1 && out_val == 1){
 	digitalWrite(sens_pin, 0);
 	  	    }	 
 	  

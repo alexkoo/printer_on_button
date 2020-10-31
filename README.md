@@ -38,13 +38,6 @@
 	sudo nano /etc/rc.local
 	/home/pi/printer_on_button/button
 
-
-Обновление
-
-	cd printer_on_button
-	git pull
-дальше правим компилируем
-
 Добавлена функция инвертирования сигнала для работы PsuControl 
 https://github.com/kantlivelong/OctoPrint-PSUControl/wiki/Settings#sensing
 

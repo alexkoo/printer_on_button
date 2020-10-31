@@ -17,7 +17,11 @@
 
 	cd #
 	git clone https://github.com/alexkoo/printer_on_button
+Если папка уже имеется
+
 	cd printer_on_button
+	git pull
+	
 Правим button.c под свои нужды
 
 	nano button.c

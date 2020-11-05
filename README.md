@@ -8,15 +8,19 @@
 Для работы требуется WiringOP https://github.com/zhaolei/WiringOP
 
 
-# install WiringOP
+ install WiringOP
+ 
 	git clone https://github.com/zhaolei/WiringOP.git -b h3
 	cd WiringOP; chmod +x ./build; sudo ./build	
- # first INSTALL
+ first INSTALL
+
   	cd #; git clone https://github.com/alexkoo/printer_on_button; cd printer_on_button; nano button.c
 	gcc button.c -o button -lwiringPi -lpthread; sudo button
-# UPDATE 
+ UPDATE 
+ 
  	cd #; cd printer_on_button; git pull; gcc button.c -o button -lwiringPi -lpthread; 
- # RUN
+  RUN
+  
  	cd #; cd printer_on_button; sudo pkill button; sudo button
  
 

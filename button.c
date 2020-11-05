@@ -12,6 +12,7 @@ char  button_val = 1;
 char  out_val = 0;
 
   wiringPiSetup();
+  stdio();
   pinMode (button_pin, INPUT) ;
   pinMode (out_pin, OUTPUT);
  if   (sens_on == 1){

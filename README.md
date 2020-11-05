@@ -1,4 +1,6 @@
 # Запускает и выключает питание принтера при нажатии на кнопку.
+##UPDATE 
+ cd#; cd printer_on_button; git pull; gcc button.c -o button -lwiringPi -lpthread
 
 Программа к статье https://3dtoday.ru/blogs/alexalexk/octoprint-vklyucenie-vyklyucenie-bloka-pitaniya-knopkoi
 

@@ -9,9 +9,9 @@
 
 
  install WiringOP 
- 
-	`git clone https://github.com/zhaolei/WiringOP.git -b h3
-	`cd WiringOP; chmod +x ./build; sudo ./build	
+ 	
+ 	git clone https://github.com/zhaolei/WiringOP.git -b h3
+	cd WiringOP; chmod +x ./build; sudo ./build	
  first INSTALL
 
   	cd #; git clone https://github.com/alexkoo/printer_on_button; cd printer_on_button; nano button.c

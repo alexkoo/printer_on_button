@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <wiringPi.h>
+
+
 int main (void) {
 
 const char  button_off = 1; //использовать ли функцию отключения
@@ -11,6 +13,7 @@ const char  sens_pin = 23;
 char  button_val = 1;
 char  out_val = 0;
 
+  int system();	
   wiringPiSetup();
   pinMode (button_pin, INPUT) ;
   pinMode (out_pin, OUTPUT);

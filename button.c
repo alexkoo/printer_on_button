@@ -1,4 +1,5 @@
-﻿#include <wiringPi.h>
+#include <stdio.h>
+#include <wiringPi.h>
 int main (void) {
 
 const char  button_off = 1; //использовать ли функцию отключения

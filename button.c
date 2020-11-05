@@ -12,7 +12,6 @@ char  button_val = 1;
 char  out_val = 0;
 
   wiringPiSetup();
-  system();
   pinMode (button_pin, INPUT) ;
   pinMode (out_pin, OUTPUT);
  if   (sens_on == 1){
@@ -24,7 +23,7 @@ char  out_val = 0;
 button_val = digitalRead(button_pin);
 out_val = digitalRead(out_pin);
 
-	  
+//совместимость с psu control	  
 if ( sens_on == 1 && out_val == 0){
 	digitalWrite(sens_pin, 1);
 	  	    }

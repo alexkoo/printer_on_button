@@ -37,7 +37,9 @@ if ( sens_on == 1 && out_val == 1){
 //Включение	  
 if (button_val== 0 && out_val == 0){
 	digitalWrite(out_pin, 1);
+	system("service octoprint restart");
 	system("service klipper restart");
+	
 	delay (5000);
   	    }
 // Если не нужно отключение кнопкой следующий if можно удалить
